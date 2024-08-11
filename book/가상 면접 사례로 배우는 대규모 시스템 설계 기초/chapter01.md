@@ -1,11 +1,11 @@
 # Chapter01
 
 ## 단일서버
-
-![단일서버.png](..%2F..%2F..%2F..%2F..%2FDownloads%2F%EB%8B%A8%EC%9D%BC%EC%84%9C%EB%B2%84.png)
+<img src="https://github.com/user-attachments/assets/fae8b881-44fe-4c12-b0f1-161d76767813" width="400" height="300"/> <br>
 - 단일 서버란 웹, 앱, DB, 캐시 등 하나의 서버에서 실행되는 것을 말한다.
 - 사용자가 증가하면 수평적 규모 확장을 통해 서버를 분리하는 것이 좋다.
-![chatper02.png](..%2F..%2F..%2F..%2F..%2FDownloads%2Fchatper02.png)
+
+<img src="https://github.com/user-attachments/assets/db738d97-f7f2-4c40-8bc2-6eeec2348eb6" width="400" height="300"/> <br>
 
 - 위 사진은 프레젠테이션에서 발생하는 트래픽 처리 서버와 데이터베이스 서버를 수평적 규모 확장을 통해 분리한 모습이다.
 
@@ -38,7 +38,8 @@
 - 많은 양의 데이터를 저장할 필요가 있을 때
 
 ## 데이터베이스 다중화
-![chapter03.png](..%2F..%2F..%2F..%2F..%2FDownloads%2Fchapter03.png)
+<img src="https://github.com/user-attachments/assets/cbf48f84-42bd-4c9f-b8dc-3266e47e5d48" width="400" height="300"/> <br>
+
 
 - 데이터베이스를 다중화 하였을 때 데이터베이스 서버 사이의 Master-Slave 관계가 설정된다.
 - 데이터의 원본은 Master인 주 서버에, 사본은 Slave인 부 서버에 저장된다.
@@ -52,7 +53,8 @@
 - Availability : 데이터를 여러 서버에 복제해 둠으로써, 하나의 데이터 베이스 서버에 장애가 발생하더라도 다른 서버에 있는 데이터를 가져와 계속 서비스를 할 수 있다.
 
 ## 캐시
-![chapter04.png](..%2F..%2F..%2F..%2F..%2FDownloads%2Fchapter04.png)
+<img src="https://github.com/user-attachments/assets/a9cbf91f-4db0-4d04-9e32-1c48cfb14e2e" width="400" height="300"/> <br>
+
 
 - 캐시 계층을 사용하면 성능 개선 및 데이터베이스의 부하 감소, 독립적으로 확장이 가능하다.
 - 캐시를 사용한다면 아래 5가지 질문에 대해 답변해보자.
@@ -69,13 +71,14 @@
         - FIFO : 가장 먼저 캐시에 들어온 데이터를 가장 먼저 내보내는 정책
 
 ## 무상태(Stateless) 웹 계층
-![chatper05.png](..%2F..%2F..%2F..%2F..%2FDownloads%2Fchatper05.png)
+<img src="https://github.com/user-attachments/assets/2b487140-41a7-493b-81dc-f06b97548835" width="400" height="300"/> <br>
 
 
 - Http 같은 언어는 무상태성을 가지고 있기 때문에, 상태를 기억하기 위해 쿠키나 세션같은 값을 저장해야 한다. 이를 공유 저장소인 DB or Memcached/Redis 같은 곳에 저장할 수 있다.
 
 ## 메시지 큐
-![chatper06.png](..%2F..%2F..%2F..%2F..%2FDownloads%2Fchatper06.png)
+<img src="https://github.com/user-attachments/assets/8c478dda-5ec5-4aa2-ba8a-bef3c214ea79" width="400" height="300"/> <br>
+
 
 - 메시지 큐는 메시지의 무손실을 보장과 비동기 통신을 지원하는 컴포넌트다.
 - 메시지 큐를 사용하는 이유는 서비스 또는 서버 간 결합이 느슨해지기 때문에, MSA와 같은 규모 확정성이 보장되어야 하는 애플리케이션에 구성하기 좋다.
@@ -98,7 +101,7 @@
         - 이를 해결하기 위해 비-관계형 데이터베이스로 전환하여 하나의 테이블에서 질의가 수행될 수 있게 한다.
 
 ## 정리
-![chatper07.png](..%2F..%2F..%2F..%2F..%2FDownloads%2Fchatper07.png)
+<img src="https://github.com/user-attachments/assets/c6b26245-7952-49f3-b528-a1796a49d84b" width="400" height="300"/> <br>
 
 - 웹 계층은 무상태 계층으로 만들 것
 - 모든 계층에 다중화 도입할 것
